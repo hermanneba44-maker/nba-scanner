@@ -1,9 +1,9 @@
-import requests, schedule, time
+import requests, schedule, time, os
 from datetime import datetime
 
-TOKEN = "8698830339:AAHpdpizzC-T387_eATBIwosKeOTRk6-P50"
-CHAT = "5304818625"
-KEY = "12ed9fa2b7453e962298eda712b13275"
+TOKEN = os.environ.get("TOKEN")
+CHAT = os.environ.get("CHAT")
+KEY = os.environ.get("KEY")
 
 def send(msg):
     try:
